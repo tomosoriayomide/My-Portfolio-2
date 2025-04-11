@@ -38,6 +38,10 @@ function tried() {
       setTimeout(type, 200);
     }
   }
+  function timed() {
+    setTimeout(tried, 5000);
+  }
+  timed();
   let lastScrollY = window.scrollY;
   window.addEventListener("scroll", () => {
     if (window.scrollY === 0 && lastScrollY !== 0) {
@@ -163,8 +167,10 @@ window.addEventListener("load", function () {
   const preloader = document.getElementById("preloader");
   const content = document.getElementById("main-content");
 
-  preloader.style.display = "none";
-  content.style.display = "block";
+  setTimeout(() => {
+    preloader.style.display = "none";
+    content.style.display = "block";
+  }, 5000);
 });
 {
   /* </script> */

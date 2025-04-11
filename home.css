@@ -91,20 +91,25 @@ body {
   flex-direction: column;
 }
 .aaa a {
-  color: white;
+  color: gray;
   font-size: 15px;
   margin-bottom: 20px;
   text-decoration: none;
 }
+.aaa a:hover {
+  color: #fff;
+}
 .name {
-  color: white;
+  color: hsl(0, 30%, 86%);
+  /* color: white; */
   font-size: 40px;
   font-weight: 900;
 }
 #below {
+  color: hsl(0, 30%, 86%);
   letter-spacing: -1px;
   font-size: 20px;
-  color: white;
+  /* color: white; */
   text-decoration: underline;
   text-transform: capitalize;
 }
@@ -275,7 +280,7 @@ html {
   padding: 10px;
   line-height: 30px;
 }
-#contact{
+#contact {
   margin-left: 20%;
   padding: 30px;
   line-height: 20px;
@@ -283,7 +288,7 @@ html {
 .line {
   margin-top: 10px;
 }
-.writeup{
+.writeup {
   padding: 20px;
   /* background-color: red; */
   width: 100%;
@@ -291,7 +296,6 @@ html {
 }
 .write-up h2 {
   font-size: 20px;
-
 }
 #ham {
   display: none;
@@ -300,11 +304,11 @@ html {
   display: none;
 }
 
-.form{
+.form {
   display: flex;
   gap: 20px;
 }
-.forms{
+.forms {
   gap: 20px;
   display: flex;
 }
@@ -318,7 +322,7 @@ html {
 }
 input {
   width: 100%;
-  
+
   height: 5vh;
   border: none;
   /* border-radius: 20px; */
@@ -328,7 +332,7 @@ input {
   background-color: white;
   border: 2px solid black;
 }
-.github{
+.github {
   /* text-decoration: underline; */
   margin-left: 0px;
   font-size: 15px;
@@ -336,12 +340,12 @@ input {
   gap: 10px;
   align-items: center; */
 }
-.touch{
+.touch {
   margin-top: 20px;
   margin-bottom: 20px;
   /* background-color: black; */
 }
-.github:hover{
+.github:hover {
   border-bottom: 0px;
 }
 #email {
@@ -363,13 +367,12 @@ form {
   padding: 10px;
   margin: 0 auto;
   /* width: 250%; */
-
 }
-#named{
+#named {
   width: 49%;
   /* background-color: red; */
 }
-.form{
+.form {
   /* background-color: red; */
   width: 100%;
 }
@@ -377,7 +380,7 @@ form {
   position: fixed;
   width: 100%;
   height: 100%;
-  background: #000; /* or any bg you want */
+  background: #000;
   top: 0;
   left: 0;
   z-index: 9999;
@@ -429,56 +432,32 @@ button:hover {
   font-family: cursive;
 }
 @keyframes edit {
-  from{
+  from {
     background-color: gainsboro;
     color: black;
     font-family: sans-serif;
   }
-  to{
+  to {
     background-color: black;
     color: white;
     font-family: cursive;
   }
 }
 
-.next {
-  /* background-color: #fff; */
-  padding: 20px;
-  /* border: 10px solid red; */
-  border: 5px solid white;
-
-  border-radius: 100%;
-  transform: rotate(270deg);
-}
-.next:hover{
-  animation: color 3s ease-in-out forwards;
-  /* background-color: #fff; */
-}
-@keyframes color {
-  from{
-    background-color: gainsboro;
-    bottom: 0;
-  }
-  to{
-    background-color: white;
-    top: 100%;
-  }
-  
-}
-.app{
+.app {
   width: 30px;
   /* background-color: red; */
-  transform: translate(0px,10px);
+  transform: translate(0px, 10px);
   margin: 5px;
 }
-.apps{
+.apps {
   width: 40px;
   height: 40px;
   /* background-color: red; */
   /* margin-top: 10px; */
   /* object-fit: contain; */
   /* transform: scale(1.3); */
-  transform: translate(0px,15px);
+  transform: translate(0px, 15px);
   padding: 0px;
   border-radius: 100%;
 
@@ -486,48 +465,56 @@ button:hover {
   /* flex-direction: row; */
   /* display: flex; */
 }
-li{
+li {
   margin-left: 10px;
   text-decoration: none;
 }
-#contact a{
+#contact a {
   text-decoration: none;
   color: blueviolet;
 }
-h2{
+h2 {
   text-transform: uppercase;
 }
-.div{
+.div {
   display: flex;
+}
+#resume {
+  /* background-color: red; */
+  height: auto;
+}
 
+.imgline {
+  height: auto;
+  /* display: none; */
 }
-@media screen and (min-width:300px) and (max-width:520px) {
-  .contacts{
+@media screen and (min-width: 300px) and (max-width: 520px) {
+  .contacts {
     width: 90%;
     flex-direction: column;
   }
- 
-  .form{
+
+  .form {
     flex-direction: column;
   }
-  form{
+  form {
     width: 100%;
   }
-  button{
+  button {
     width: 100%;
   }
 }
-@media screen and (min-width:521px) and (max-width:1020px) {
-  .contacts{
+@media screen and (min-width: 521px) and (max-width: 1020px) {
+  .contacts {
     width: 90%;
     flex-direction: column;
   }
-  .contacts .my{
+  .contacts .my {
     margin-bottom: 20px;
     /* background-color: red; */
     padding-bottom: 20px;
   }
-  .form{
+  .form {
     font-size: 20px;
     padding: 10px;
     flex-direction: column;
@@ -536,17 +523,16 @@ h2{
     font-size: 20px;
     color: blueviolet;
   }
-  form ::placeholder{
+  form ::placeholder {
     font-size: 15px;
   }
-  form{
+  form {
     width: 100%;
-    
   }
-  input{
+  input {
     font-size: 15px;
   }
-  button{
+  button {
     width: 100%;
   }
 }
@@ -559,32 +545,48 @@ h2{
   #portfolio {
     width: 100%;
     margin-left: 0px;
+    background-position: center 0;
     background-size: cover;
     height: auto;
   }
-#home{
-  height: 100vh;
-}  
+  #height {
+    /* background-color: red; */
+    height: 30rem;
+  }
+  
+  #home {
+    height: 100vh;
+    text-align: center;
+  }
+  .aaa {
+    color: gray;
+  }
 
   #navmobile {
     position: fixed;
     top: 0;
     right: 0;
-    width: 50%;
-    color: white;
+    width: 70%;
+    color: gray;
     height: 100vh;
     background-color: hsl(240, 95%, 7%);
     z-index: 1000;
-    transform: translateX(-200%);
+    transform: translateX(-250%);
     display: flex;
     transition: transform 0.3s ease-in-out;
     flex-direction: column;
     align-items: center;
+    line-height: 20px;
+    /* margin-top: 10px; */
     /* justify-content: center; */
+  }
+  #navmobile .myName{
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 
   #navmobile.active {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 
   /* @keyframes slide {
@@ -629,41 +631,57 @@ h2{
     cursor: pointer;
     filter: brightness(0) invert(1) drop-shadow(0 0 5px white);
   }
-  .imgText{
+  .imgText {
     flex-direction: column;
     /* background-color: green; */
     height: auto;
   }
-  #about{
+  #about {
     /* background-color: red; */
     height: auto;
   }
-  .statistics{
+  .statistics {
     flex-direction: column;
   }
-  .mobileflex{
+  .mobileflex {
     flex-direction: column;
-    
   }
-  .div{
+  .flexend {
+    flex-direction: column;
+    font-size: 15px;
+  }
+  .div {
     display: flex;
   }
-  #sum{
+  #sum {
     display: block;
     /* background-color: rebeccapurple; */
   }
-  .images{
+  .images {
     display: grid;
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
     /* background-color: red; */
   }
-  #services{
+  #services {
     /* background-color: red; */
     margin-left: 0px;
     width: 100%;
   }
-  .forms{
+  .forms {
     flex-direction: column;
     /* background-color: red; */
+  }
+  .images {
+    /* background-color: red; */
+    display: grid;
+    width: 100%;
+    grid-template-columns:  1fr;
+    /* grid-column: 1/2; */
+  }
+  #portfolio img{
+    width: 100%;
+    height: 300px;
+    background-color: blue;
+    /* display: none; */
   }
 }
