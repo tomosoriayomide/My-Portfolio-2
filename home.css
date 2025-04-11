@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+#home {
+  margin-left: 20%;
+  padding: 20px;
+  /* margin-right: 10px; */
+  /* position: absolute; */
+  /* align-items: flex-end; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 80%;
+  background: url(./images/bgImg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#nav a{
+  color: gray;
+}
+#nav a:hover{
+  color: white;
+  cursor: pointer;
+}
+#nav {
+  background-color: rgb(1, 1, 36);
+  color: white;
+  display: flex;
+  overflow: auto;
+  align-items: center;
+  gap: 20px;
+  width: 20%;
+  height: 100vh;
+  position: fixed;
+  flex-direction: column;
+}
+.aaa {
+  display: flex;
+  flex-direction: column;
+}
+.aaa a {
+  color: white;
+  font-size: 15px;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+.name {
+  color: white;
+  font-size: 40px;
+  font-weight: 900;
+}
+#below {
+  letter-spacing: -1px;
+  font-size: 20px;
+  color: white;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+#resume {
+  margin-left: 20%;
+  width: 80%;
+  height: 100vh;
+  padding: 30px;
+  line-height: 20px;
+}
+
+#resflex {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+.summary {
+  /* background-color: gray; */
+  width: 100%;
+  padding: 10px;
+}
+.imgline {
+  height: 320px;
+}
+#resume .head {
+  margin-top: 10px;
+}
+#services {
+  margin-left: 20%;
+  width: 80%;
+  padding: 30px;
+  line-height: 30px;
+}
+.me {
+  border-radius: 100%;
+  border: 10px solid gray;
+  width: 150px;
+  /* margin-left: 20%; */
+  margin-top: 50px;
+}
+#services br {
+  display: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+#skills{
+    background-color: hsla(180, 47%, 89%,0.2);
+    margin-left: 20%;
+    padding: 30px;
+    height: 80vh;
+}
+.head{
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.skill{
+    margin-bottom: 40px;
+}
+.hrs{
+    
+    border: none;
+    height: 3px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 50px;
+    background-color: hsl(180, 43%, 52%);
+
+}
+.load{
+    background-color: gainsboro;
+    /* width: 70%; */
+    margin-top: 10px;
+    margin-bottom: 30px;
+    height: 2vh;
+}
+.skillflex{
+    /* background-color: blue; */
+    width: 100%;
+}
+.loaderfill-css{
+    background-color: cadetblue;
+    width: 75%;
+    height: 100%;
+}
+.loaderfill-html{
+    background-color: cadetblue;
+    width: 90%;
+    height: 100%;
+}
+.loaderfill-js{
+    background-color: cadetblue;
+    width: 50%;
+    height: 100%;
+}
+.loaderfill-scribble{
+    background-color: cadetblue;
+    width: 80%;
+    height: 100%;
+}
+.loaderfill-react{
+    background-color: cadetblue;
+    width: 40%;
+    height: 100%;
+}
+.loaderfill-tailwind{
+    background-color: cadetblue;
+    width: 60%;
+    height: 100%;
+}
+.access{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: bold;
+}
+.statistics{
+    display: flex;
+    gap: 30px;
+    /* background-color: red; */
+}
+#about{
+    /* background-color: red; */
+    height: 100vh;
+    margin-left: 25%;
+    padding: 10px;
+    padding-top: 30px;
+}
+.hr{
+    border: none;
+    height: 2px;
+    border-radius: 5px;
+    width: 35px;
+    background-color: hsl(180, 43%, 52%);
+}
+.text{
+    margin-top: 20px;
+}
+
+#abt{
+    padding-bottom: 15px;
+    /* border-bottom: 1px solid blue; */
+    color: #000;
+    font-size: 20px;
+}
+.imgText{
+    /* background-color: red; */
+    height: 350px;
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.imgText img{
+    height: 350px;
+}
+.flexend{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    width: 70%;
+    margin-top: 30px;
+    padding: 10px;
+    line-height: 30px;
+}
+.line{
+    margin-top: 10px;
+}
+.write-up h2{
+    font-size: 20px;
+}
