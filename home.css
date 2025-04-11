@@ -18,7 +18,8 @@ body {
   justify-content: center;
   height: 100vh;
   width: 80%;
-  background: url(./images/bgImg.png);
+  background: url(./images/fotor\ edit.png);
+  background-position: 0px -200px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -653,7 +654,7 @@ h2{
   }
   .images{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     /* background-color: red; */
   }
   #services{
