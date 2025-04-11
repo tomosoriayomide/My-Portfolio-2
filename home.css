@@ -496,6 +496,10 @@ li{
 h2{
   text-transform: uppercase;
 }
+.div{
+  display: flex;
+
+}
 @media screen and (min-width:300px) and (max-width:520px) {
   .contacts{
     width: 90%;
