@@ -5,11 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="home.css" />
-    <link rel="stylesheet" href="about.css" />
-    <link rel="stylesheet" href="skilss.css" />
-    <link rel="stylesheet" href="resume.css" />
+    <!-- <link rel="stylesheet" href="about.css" /> -->
+    <!-- <link rel="stylesheet" href="skilss.css" /> -->
+    <!-- <link rel="stylesheet" href="resume.css" /> -->
   </head>
   <body>
+    <div id="navmobile">
+      <img
+        src="images/icon-close.svg"
+        alt=""
+        id="cancel"
+        onclick="canceled()"
+      />
+      <img src="images/fotor edit.png" alt="me" class="me" />
+      <h2 class="myName">Tomosori Ayomide</h2>
+      <div class="handles">
+        <img src="" alt="handles" />
+        <img src="" alt="handles" />
+        <img src="" alt="handles" />
+        <img src="" alt="handles" />
+      </div>
+      <div class="aaa">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#resume">Resume</a>
+        <a href="">Portfolio</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
     <div id="nav">
       <img src="images/fotor edit.png" alt="me" class="me" />
       <h2 class="myName">Tomosori Ayomide</h2>
@@ -30,11 +55,17 @@
       </div>
     </div>
     <div id="home">
+      <!-- <div class="ham"> -->
+      <img src="/images/icon-menu.svg" alt="" id="ham" onclick="displayed()" />
+      <!-- </div> -->
       <h1 class="name">Tomosori Ayomide</h1>
       <p id="below"><!---It's Tomosori Ayomide a web developer--></p>
     </div>
     <div id="about">
-      <h2 id="abt"><!--- About---> About</h2>
+      <h2 id="abt">
+        <!--- About--->
+        About
+      </h2>
       <hr class="hr" />
       <p class="text">
         Hey there! I'm Tomosori Ayomide Gabriel, a passionate frontend web
@@ -200,59 +231,130 @@
               frontend development skills
             </h4>
           </div>
+          <p></p>
         </div>
       </div>
     </div>
-   <div id="services">
-       <h1 class="head">my services</h1>
-        <!-- <p> -->
-         <div class="served">
-           <h3>
-
-            🔹 Website Development
-          </h3>
-        <p class="serve"> I build sleek, modern, and high-performing websites using the latest web <br> technologies to ensure speed and seamless functionality.
+    <div id="portfolio">
+      <h2 class="head">Portfolio</h2>
+      <p>
+        Welcome to my portfolio – a collection of projects that showcase my
+        skills, creativity, and passion for Web Development. Dive in and
+        explore!
+      </p>
+      <div class="images">
+        <div class="image-container">
+          <img
+            src="images/conference-ticket-generator-screenshot.jpg"
+            alt="Hover to copy URL"
+          />
+          <div class="hover-icon" onclick="copyURL()">Copy URL</div>
+        </div>
+        <div class="image-container">
+          <img
+            src="images/crest.jpg"
+            alt="Hover to copy URL"
+          />
+          <div class="hover-icon" onclick="copycrest()">Copy URL</div>
+        </div>
+        <div class="image-container">
+          <img
+            src="images/loops.jpg"
+            alt="Hover to copy URL"
+          />
+          <div class="hover-icon" onclick="copyloop()">Copy URL</div>
+        </div>
+        <div class="image-container">
+          <img
+            src="images/price toggle.jpg"
+            alt="Hover to copy URL"
+          />
+          <div class="hover-icon" onclick="price()">Copy URL</div>
+        </div>
+        <div class="image-container">
+          <img
+            src="images/qrcode.jpg"
+            alt="Hover to copy URL"
+          />
+          <div class="hover-icon" onclick="qrcode()">Copy URL</div>
+        </div>
+        <div class="image-container">
+          <img
+            src="images/social-links.jpg"
+            alt="Hover to copy URL"
+          />
+          <div class="hover-icon" onclick="sociallinks()">Copy URL</div>
+        </div>
+        <div class="image-container">
+          <img
+            src="images/testimonialgrid.jpg"
+            alt="Hover to copy URL"
+          />
+          <div class="hover-icon" onclick="grid()">Copy URL</div>
+        </div>
+        <div class="image-container">
+          <img
+            src="images/timetracking.jpg"
+            alt="Hover to copy URL"
+          />
+          <div class="hover-icon" onclick="time()">Copy URL</div>
+        </div>
+        <div class="image-container">
+          <img
+            src="images/crowdfund.jpg"
+            alt="Hover to copy URL"
+          />
+          <div class="hover-icon" onclick="fund()">Copy URL</div>
+        </div>
+      </div>
+    </div>
+    <div id="services">
+      <h1 class="head">services</h1>
+      <!-- <p> -->
+      <div class="served">
+        <h3>🔹 Website Development</h3>
+        <p class="serve">
+          I build sleek, modern, and high-performing websites using the latest
+          web <br />
+          technologies to ensure speed and seamless functionality.
         </p>
-         </div>
-         <div class="served">
+      </div>
+      <div class="served">
         <h3>🔹 Responsive Design</h3>
         <p class="serve">
-          Your website will look stunning and work perfectly on desktops,  tablets,<br> and  mobile devices—no matter the screen size.
-
-        </p>        
-        
-         </div>
-         <div class="served">
-        <h3>
-          🔹 Landing Pages & Portfolio Sites
-        </h3>
+          Your website will look stunning and work perfectly on desktops,
+          tablets,<br />
+          and mobile devices—no matter the screen size.
+        </p>
+      </div>
+      <div class="served">
+        <h3>🔹 Landing Pages & Portfolio Sites</h3>
         <p class="serve">
-          Need a personal brand website or a high-converting landing page? I  des<br>ign  and develop professional pages tailored to your needs.
-
-                  </p>        
-                </div>
-         <div class="served">
-                  <h3>
-          🔹 Web Animations & Interactions
-        </h3>
-                  <p class="serve">
-          I add smooth animations and micro-interactions to make your site more<br> dynamic, engaging, and interactive.
-                  </p>        
-
-                </div>
-         <div class="served">
-                  <h3>
-          Let's Build Something Amazing! 🚀
-          
-                  </h3>
-                  <p class="serve">
-          Whether you need a brand-new website or an upgrade to an  existing  one,<br>  I’m ready to  bring your vision to reality. Let’s work together and create <br>something extraordinary!
-        </p>        
+          Need a personal brand website or a high-converting landing page? I
+          des<br />ign and develop professional pages tailored to your needs.
+        </p>
+      </div>
+      <div class="served">
+        <h3>🔹 Web Animations & Interactions</h3>
+        <p class="serve">
+          I add smooth animations and micro-interactions to make your site
+          more<br />
+          dynamic, engaging, and interactive.
+        </p>
+      </div>
+      <div class="served">
+        <h3>Let's Build Something Amazing! 🚀</h3>
+        <p class="serve">
+          Whether you need a brand-new website or an upgrade to an existing
+          one,<br />
+          I’m ready to bring your vision to reality. Let’s work together and
+          create <br />something extraordinary!
+        </p>
+      </div>
     </div>
-    </div>
-    <div id="contact">
 
-    </div>
+    }
+    <div id="contact"></div>
     <script src="script.js"></script>
   </body>
 </html>
