@@ -57,7 +57,16 @@ body {
   height: 200px;
   border-radius: 10px;
 }
-
+.projectname {
+  background-color: rgb(173, 229, 231);
+  color: white;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  padding: 5px;
+  border-radius: 5px;
+  display: none;
+}
 .hover-icon {
   position: absolute;
   top: 50%;
@@ -71,7 +80,8 @@ body {
   cursor: pointer;
 }
 
-.image-container:hover .hover-icon {
+.image-container:hover .hover-icon,
+.image-container:hover .projectname {
   display: block;
   cursor: pointer;
 }
@@ -97,19 +107,18 @@ body {
   text-decoration: underline;
   text-transform: capitalize;
 }
-#resume
- {
+#resume {
   margin-left: 20%;
   width: 80%;
   height: 100vh;
   padding: 30px;
   line-height: 20px;
 }
-#portfolio{
-margin-left: 20%;
-width: 80%;
-padding: 30px;
-line-height: 20px;
+#portfolio {
+  margin-left: 20%;
+  width: 80%;
+  padding: 30px;
+  line-height: 20px;
 }
 
 #resflex {
@@ -265,17 +274,276 @@ html {
   padding: 10px;
   line-height: 30px;
 }
+#contact{
+  margin-left: 20%;
+  padding: 30px;
+  line-height: 20px;
+}
 .line {
   margin-top: 10px;
 }
+.writeup{
+  padding: 20px;
+  /* background-color: red; */
+  width: 100%;
+  border: 2px solid black;
+}
 .write-up h2 {
   font-size: 20px;
+
 }
 #ham {
   display: none;
 }
 #navmobile {
   display: none;
+}
+
+.form{
+  display: flex;
+  gap: 20px;
+}
+.forms{
+  gap: 20px;
+  display: flex;
+}
+
+#names {
+  text-transform: uppercase;
+  /* background-color: red; */
+  display: block;
+  font-size: 15px;
+  margin-top: 20px;
+}
+input {
+  width: 100%;
+  
+  height: 5vh;
+  border: none;
+  /* border-radius: 20px; */
+  padding: 10px;
+  text-transform: uppercase;
+  /* background-color: gainsboro; */
+  background-color: white;
+  border: 2px solid black;
+}
+.github{
+  /* text-decoration: underline; */
+  margin-left: 0px;
+  font-size: 15px;
+  /* display: flex;
+  gap: 10px;
+  align-items: center; */
+}
+.touch{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* background-color: black; */
+}
+.github:hover{
+  border-bottom: 0px;
+}
+#email {
+  text-transform: lowercase;
+}
+textarea {
+  width: 100%;
+  /* background-color: #fff; */
+  /* background-color: gainsboro; */
+  /* border: 5px groove black; */
+  border: 2px solid black;
+  height: 15vh;
+  font-size: 15px;
+  padding: 5px 10px;
+}
+form {
+  /* background-color: red; */
+  /* width: 35rem; */
+  padding: 10px;
+  margin: 0 auto;
+  /* width: 250%; */
+
+}
+#named{
+  width: 49%;
+  /* background-color: red; */
+}
+.form{
+  /* background-color: red; */
+  width: 100%;
+}
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #000; /* or any bg you want */
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid gainsboro;
+  border-top: 5px solid red;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+#form-preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* opacity: 0.2; */
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  padding: 20px;
+  width: 30rem;
+  border-radius: 40px;
+  border: 5px groove black;
+  font-size: 20px;
+  margin-top: 40px;
+  background-color: gainsboro;
+}
+button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  animation: edit 3s ease forwards;
+  font-family: cursive;
+}
+@keyframes edit {
+  from{
+    background-color: gainsboro;
+    color: black;
+    font-family: sans-serif;
+  }
+  to{
+    background-color: black;
+    color: white;
+    font-family: cursive;
+  }
+}
+
+.next {
+  /* background-color: #fff; */
+  padding: 20px;
+  /* border: 10px solid red; */
+  border: 5px solid white;
+
+  border-radius: 100%;
+  transform: rotate(270deg);
+}
+.next:hover{
+  animation: color 3s ease-in-out forwards;
+  /* background-color: #fff; */
+}
+@keyframes color {
+  from{
+    background-color: gainsboro;
+    bottom: 0;
+  }
+  to{
+    background-color: white;
+    top: 100%;
+  }
+  
+}
+.app{
+  width: 30px;
+  /* background-color: red; */
+  transform: translate(0px,10px);
+  margin: 5px;
+}
+.apps{
+  width: 40px;
+  height: 40px;
+  /* background-color: red; */
+  /* margin-top: 10px; */
+  /* object-fit: contain; */
+  /* transform: scale(1.3); */
+  transform: translate(0px,15px);
+  padding: 0px;
+  border-radius: 100%;
+
+  /* margin-top: -5px; */
+  /* flex-direction: row; */
+  /* display: flex; */
+}
+li{
+  margin-left: 10px;
+  text-decoration: none;
+}
+#contact a{
+  text-decoration: none;
+  color: blueviolet;
+}
+h2{
+  text-transform: uppercase;
+}
+@media screen and (min-width:300px) and (max-width:520px) {
+  .contacts{
+    width: 90%;
+    flex-direction: column;
+  }
+ 
+  .form{
+    flex-direction: column;
+  }
+  form{
+    width: 100%;
+  }
+  button{
+    width: 100%;
+  }
+}
+@media screen and (min-width:521px) and (max-width:1020px) {
+  .contacts{
+    width: 90%;
+    flex-direction: column;
+  }
+  .contacts .my{
+    margin-bottom: 20px;
+    /* background-color: red; */
+    padding-bottom: 20px;
+  }
+  .form{
+    font-size: 20px;
+    padding: 10px;
+    flex-direction: column;
+  }
+  #font {
+    font-size: 20px;
+    color: blueviolet;
+  }
+  form ::placeholder{
+    font-size: 15px;
+  }
+  form{
+    width: 100%;
+    
+  }
+  input{
+    font-size: 15px;
+  }
+  button{
+    width: 100%;
+  }
 }
 @media screen and (min-width: 300px) and (max-width: 1000px) {
   #home,
@@ -287,13 +555,18 @@ html {
     width: 100%;
     margin-left: 0px;
     background-size: cover;
+    height: auto;
   }
+#home{
+  height: 100vh;
+}  
 
   #navmobile {
     position: fixed;
     top: 0;
     right: 0;
     width: 50%;
+    color: white;
     height: 100vh;
     background-color: hsl(240, 95%, 7%);
     z-index: 1000;
@@ -350,5 +623,42 @@ html {
   #cancel:hover {
     cursor: pointer;
     filter: brightness(0) invert(1) drop-shadow(0 0 5px white);
+  }
+  .imgText{
+    flex-direction: column;
+    /* background-color: green; */
+    height: auto;
+  }
+  #about{
+    /* background-color: red; */
+    height: auto;
+  }
+  .statistics{
+    flex-direction: column;
+  }
+  .mobileflex{
+    flex-direction: column;
+    
+  }
+  .div{
+    display: flex;
+  }
+  #sum{
+    display: block;
+    /* background-color: rebeccapurple; */
+  }
+  .images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* background-color: red; */
+  }
+  #services{
+    /* background-color: red; */
+    margin-left: 0px;
+    width: 100%;
+  }
+  .forms{
+    flex-direction: column;
+    /* background-color: red; */
   }
 }

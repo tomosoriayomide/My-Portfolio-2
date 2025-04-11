@@ -50,15 +50,16 @@ function tried() {
 tried();
 
 // type();
-let complete = "about";
-let initial = 0;
-function write() {
-  if (initial < complete.length) {
-    document.getElementById("abt").innerHTML += complete.charAt(initial);
-    initial++;
-  }
-}
-write();
+// let title = "About";
+// let initial = 0;
+// function write() {
+//   if (initial < title.length) {
+//     document.getElementById("aboutme").innerHTML += title.charAt(initial);
+//     initial++;
+//     console.log("meme");
+//   }
+// }
+// write();
 function copyURL() {
   const url = "https://conference-ticket-generator-lite.vercel.app/";
   navigator.clipboard
@@ -158,3 +159,25 @@ function fund() {
       console.error("Failed to copy URL:", err);
     });
 }
+window.addEventListener("load", function () {
+  const preloader = document.getElementById("preloader");
+  const content = document.getElementById("main-content");
+
+  preloader.style.display = "none";
+  content.style.display = "block";
+});
+{
+  /* </script> */
+}
+
+const form = document.getElementById("form");
+const loader = document.getElementById("form-preloader");
+
+form.addEventListener("submit", function (e) {
+  loader.style.display = "flex";
+
+  setTimeout(() => {
+    loader.style.display = "none";
+    form.reset();
+  }, 7000);
+});
