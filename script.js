@@ -78,3 +78,8 @@ form.addEventListener("submit", function (e) {
     form.reset();
   }, 7000);
 });
+// https://chat.whatsapp.com/DaS3CRPhz9g0O9EjDgaeOW
+// https://chat.whatsapp.com/K9VycmyAKSFEIm1vWFC7ad
+// https://chat.whatsapp.com/Csm8lHgpuGE9RYGsOxm9uw
+// https://chat.whatsapp.com/CO37MqOY5Du9rzpJ1HJuR4
+// https://chat.whatsapp.com/FHRMrVS0C43LHgDJAQVc0l
