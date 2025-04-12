@@ -19,14 +19,17 @@ let target = document.getElementById("below");
 // }
 let ham = document.getElementById("ham");
 let display = document.getElementById("navmobile");
+let background = document.getElementById("bgt");
 
 function displayed() {
   ham.style.display = "none";
+  background.style.display = "block";
   display.classList.add("active");
 }
 
 function canceled() {
   ham.style.display = "flex";
+  background.style.display = "none";
   display.classList.remove("active");
 }
 
@@ -38,131 +41,20 @@ function tried() {
       setTimeout(type, 200);
     }
   }
-  function timed() {
-    setTimeout(tried, 5000);
-  }
-  timed();
-  let lastScrollY = window.scrollY;
-  window.addEventListener("scroll", () => {
-    if (window.scrollY === 0 && lastScrollY !== 0) {
-      tried(text, target);
-    }
-    lastScrollY = window.scrollY;
-  });
   type();
 }
+function timed() {
+  setTimeout(tried, 5000);
+}
+timed();
+let lastScrollY = window.scrollY;
+window.addEventListener("scroll", () => {
+  if (window.scrollY === 0 && lastScrollY !== 0) {
+    tried(text, target);
+  }
+  lastScrollY = window.scrollY;
+});
 tried();
-
-// type();
-// let title = "About";
-// let initial = 0;
-// function write() {
-//   if (initial < title.length) {
-//     document.getElementById("aboutme").innerHTML += title.charAt(initial);
-//     initial++;
-//     console.log("meme");
-//   }
-// }
-// write();
-function copyURL() {
-  const url = "https://conference-ticket-generator-lite.vercel.app/";
-  navigator.clipboard
-    .writeText(url)
-    .then(() => {
-      alert("conference ticket generator URL copied!");
-    })
-    .catch((err) => {
-      console.error("Failed to copy URL:", err);
-    });
-}
-function copycrest() {
-  const url = "https://profile-card-component-lite.vercel.app/";
-  navigator.clipboard
-    .writeText(url)
-    .then(() => {
-      alert("Profile Card Component Lite URL copied!");
-    })
-    .catch((err) => {
-      console.error("Failed to copy URL:", err);
-    });
-}
-function copyloop() {
-  const url = "https://loopstudios-landing-page-main-one.vercel.app/";
-  navigator.clipboard
-    .writeText(url)
-    .then(() => {
-      alert("Loopstudio Landing Page Main  URL copied!");
-    })
-    .catch((err) => {
-      console.error("Failed to copy URL:", err);
-    });
-}
-function price() {
-  const url = "https://pricing-component-with-toggle-master-lac.vercel.app/";
-  navigator.clipboard
-    .writeText(url)
-    .then(() => {
-      alert("Pricing Componenent with  Toggle Master URL copied!");
-    })
-    .catch((err) => {
-      console.error("Failed to copy URL:", err);
-    });
-}
-function qrcode() {
-  const url = "http://qr-code-component-main-nine-sigma.vercel.app/";
-  navigator.clipboard
-    .writeText(url)
-    .then(() => {
-      alert("QR Code main URL copied!");
-    })
-    .catch((err) => {
-      console.error("Failed to copy URL:", err);
-    });
-}
-function sociallinks() {
-  const url = "https://lites-profile-card.vercel.app/";
-  navigator.clipboard
-    .writeText(url)
-    .then(() => {
-      alert("Lites profile card URL copied!");
-    })
-    .catch((err) => {
-      console.error("Failed to copy URL:", err);
-    });
-}
-function grid() {
-  const url = "https://testimonials-grid-section-lite.vercel.app/";
-  navigator.clipboard
-    .writeText(url)
-    .then(() => {
-      alert("Testimonial Grid Section URL copied!");
-    })
-    .catch((err) => {
-      console.error("Failed to copy URL:", err);
-    });
-}
-function time() {
-  const url = "https://time-tracking-dashboard-lite.vercel.app/";
-  navigator.clipboard
-    .writeText(url)
-    .then(() => {
-      alert("Time Tracking Dashboard URL copied!");
-    })
-    .catch((err) => {
-      console.error("Failed to copy URL:", err);
-    });
-}
-function fund() {
-  const url = "https://crowdfunding-product-page-main-silk.vercel.app/";
-  navigator.clipboard
-    .writeText(url)
-    .then(() => {
-      alert("Crowdfundig Product Page URL copied!");
-    })
-    .catch((err) => {
-      console.error("Failed to copy URL:", err);
-    });
-}
 window.addEventListener("load", function () {
   const preloader = document.getElementById("preloader");
   const content = document.getElementById("main-content");
@@ -173,7 +65,6 @@ window.addEventListener("load", function () {
   }, 5000);
 });
 {
-  /* </script> */
 }
 
 const form = document.getElementById("form");

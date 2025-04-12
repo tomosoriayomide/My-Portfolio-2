@@ -138,7 +138,7 @@ body {
   padding: 10px;
 }
 .imgline {
-  height: 320px;
+display: none;
 }
 #resume .head {
   margin-top: 10px;
@@ -361,8 +361,18 @@ textarea {
   font-size: 15px;
   padding: 5px 10px;
 }
+.bgt{
+  background-color: transparent;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 5;
+  display: none;
+}
+
 form {
-  /* background-color: red; */
+  background-color: black;
+  color: white;
   /* width: 35rem; */
   padding: 10px;
   margin: 0 auto;
@@ -383,8 +393,9 @@ form {
   background: #000;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 999;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -394,8 +405,66 @@ form {
   height: 50px;
   border: 5px solid gainsboro;
   border-top: 5px solid red;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: spin 2s linear infinite;
+}
+.links{
+  color: white;
+  text-decoration: none;
+}
+.toloader {
+  border: 5px solid red;
   border-radius: 50%;
+  width: 85px;
+  border-top: 5px solid gainsboro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   animation: spin 1s linear infinite;
+  height: 85px;
+}
+.toploader {
+  /* background-color: blue; */
+  width: 120px;
+  border: 5px solid gainsboro;
+  border-radius: 50%;
+  border-bottom: 5px solid red;
+  height: 120px;
+  display: flex;
+  animation: spin 1s linear infinite;
+  justify-content: center;
+  align-items: center;
+}
+.adventure {
+  color: white;
+  font-size: 30px;
+  font-family: cursive;
+  text-align: center;
+}
+.loading {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  /* justify-content: end; */
+}
+.loads {
+  text-align: center;
+  /* background-color: red; */
+  position: absolute;
+  bottom: 30px;
+  /* justify-content: end; */
+}
+.loaded {
+  background-color: red;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
 }
 @keyframes spin {
   to {
@@ -407,7 +476,7 @@ form {
   top: 0;
   left: 0;
   /* opacity: 0.2; */
-  background: rgba(0, 0, 0, 0.7);
+  background: hsla(0, 0%, 0%, 0.7);
   width: 100%;
   height: 100%;
   z-index: 100;
@@ -419,13 +488,14 @@ button {
   padding: 20px;
   width: 30rem;
   border-radius: 40px;
-  border: 5px groove black;
+  border: 10px ridge cornsilk;
   font-size: 20px;
+  
   margin-top: 40px;
-  background-color: gainsboro;
+  background-color: white;
 }
 button:hover {
-  background-color: black;
+  /* background-color: black; */
   color: white;
   cursor: pointer;
   animation: edit 3s ease forwards;
@@ -433,13 +503,13 @@ button:hover {
 }
 @keyframes edit {
   from {
-    background-color: gainsboro;
+    background-color: white;
     color: black;
     font-family: sans-serif;
   }
   to {
-    background-color: black;
-    color: white;
+    background-color: hsl(180, 11%, 80%);
+    color: black;
     font-family: cursive;
   }
 }
@@ -553,7 +623,7 @@ h2 {
     /* background-color: red; */
     height: 30rem;
   }
-  
+
   #home {
     height: 100vh;
     text-align: center;
@@ -570,7 +640,7 @@ h2 {
     color: gray;
     height: 100vh;
     background-color: hsl(240, 95%, 7%);
-    z-index: 1000;
+    z-index: 70;
     transform: translateX(-250%);
     display: flex;
     transition: transform 0.3s ease-in-out;
@@ -580,7 +650,7 @@ h2 {
     /* margin-top: 10px; */
     /* justify-content: center; */
   }
-  #navmobile .myName{
+  #navmobile .myName {
     margin-top: 20px;
     margin-bottom: 10px;
   }
@@ -675,10 +745,10 @@ h2 {
     /* background-color: red; */
     display: grid;
     width: 100%;
-    grid-template-columns:  1fr;
+    grid-template-columns: 1fr;
     /* grid-column: 1/2; */
   }
-  #portfolio img{
+  #portfolio img {
     width: 100%;
     height: 300px;
     background-color: blue;
