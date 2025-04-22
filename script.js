@@ -43,10 +43,10 @@ function tried() {
   }
   type();
 }
-function timed() {
-  setTimeout(tried, 5000);
-}
-timed();
+// function timed() {
+//   setTimeout(tried, 5000);
+// }
+// timed();
 let lastScrollY = window.scrollY;
 window.addEventListener("scroll", () => {
   if (window.scrollY === 0 && lastScrollY !== 0) {
@@ -64,8 +64,8 @@ window.addEventListener("load", function () {
     content.style.display = "block";
   }, 5000);
 });
-{
-}
+
+
 
 const form = document.getElementById("form");
 const loader = document.getElementById("form-preloader");
