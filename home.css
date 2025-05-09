@@ -471,6 +471,24 @@ form {
     transform: rotate(360deg);
   }
 }
+.handles{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.handle:hover{
+  filter: grayscale(0%);
+  cursor: pointer;
+}
+.handle{
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  filter: grayscale(100%);
+}
 #form-preloader {
   position: fixed;
   top: 0;
@@ -652,6 +670,7 @@ h2 {
   }
   #navmobile .myName {
     margin-top: 20px;
+    padding: 10px;
     margin-bottom: 10px;
   }
 
